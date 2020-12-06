@@ -11,10 +11,18 @@
 - 2.掌握文件的读取/写入方法
 - 3.掌握异常处理结构
 #实验过程
-1.编写student类 (1)属性：name(姓名)，major(专业)，stuNum(学号)，age(年龄) (2)通过Scanner类实例化学生信息，将学生信息输入进去 2.编写test(测试)类 (1)通过Fileinputstream读取文本文件B (2)将学生信息转化成字符数组存入文本文件A中 (3)使用for循环，if-else语句将诗句按照规定的格式存入文本文件B中 (4)try-catch语句进行异常处理
+- 1.编写student类 
+- (1)属性：name(姓名)，major(专业)，stuNum(学号)，age(年龄) 
+- (2)通过Scanner类实例化学生信息，将学生信息输入进去 
+- 2.编写test(测试)类 
+- (1)通过Fileinputstream读取文本文件B 
+- (2)将学生信息转化成字符数组存入文本文件A中 
+- (3)使用for循环，if-else语句将诗句按照规定的格式存入文本文件B中 
+- (4)try-catch语句进行异常处理 
 #核心代码
- Student stu=new Student();
-        Scanner sc= new Scanner(System.in);
+
+        Student stu=new Student();
+         Scanner sc= new Scanner(System.in);
 
         System.out.println("输入姓名：");
         name=sc.next();
@@ -28,7 +36,7 @@
         String str="姓名:"+name+" 学号:"+stuNum+" 年龄:"+age;
         return str;
 
-for (int i=7,x=0; i<=14*17;i+=7,x+=7) { //输出诗句到文件
+      for (int i=7,x=0; i<=14*17;i+=7,x+=7) { //输出诗句到文件
 
                 if (i % 2 == 0) {
                     for (int j = x; j < i; j++) {
